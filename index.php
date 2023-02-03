@@ -1,6 +1,5 @@
 <?php
 
-
 if (isset($_GET['first']) && ($_GET['last']) && ($_GET['age'])) {
     $firstName = htmlspecialchars($_GET['first']);
     $lastName = htmlspecialchars($_GET['last']);
@@ -14,15 +13,6 @@ $voting = null;
 $firstName = filter_input(INPUT_GET, 'first', FILTER_SANITIZE_SPECIAL_CHARS);
 $lastName = filter_input(INPUT_GET, 'last', FILTER_SANITIZE_SPECIAL_CHARS);
 $age = filter_input(INPUT_GET, 'age', FILTER_VALIDATE_INT);
-
-// if (!empty($firstName) && !empty($lastName)) {
-//     echo $firstName;
-//     echo $lastName;
-// } else {
-//     echo "Please fill the names";
-// }
-
-
 
 if(isset($age)
 )
